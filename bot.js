@@ -2,7 +2,7 @@ import { Telegraf } from 'telegraf'
 import { message } from 'telegraf/filters'
 
 // Token from @BotFather, hardcoded so no .env file is needed.
-const token = '8850656713:AAGYuIX3b9CYEe9LxbijDl2jvaemnsRV2ds'
+const token = '8850656713:AAHWiWeT3kqqyk00vN5UHJxO32HfZVrc1ew'
 
 // A fresh bot per attempt: a Telegraf instance whose launch failed
 // cannot be reliably relaunched, so we rebuild it on each retry.
