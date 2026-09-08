@@ -1,0 +1,14 @@
+{
+  "name": "telegram-echo-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Telegram bot that replies with the same message you send it",
+  "type": "module",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node --env-file=.env bot.js"
+  },
+  "dependencies": {
+    "telegraf": "^4.16.3"
+  }
+}
