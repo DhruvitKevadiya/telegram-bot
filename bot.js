@@ -1,13 +1,8 @@
 import { Telegraf } from 'telegraf'
 import { message } from 'telegraf/filters'
 
-const token = process.env.BOT_TOKEN
-
-if (!token) {
-  console.error('BOT_TOKEN is missing.')
-  console.error('Copy .env.example to .env and paste the token @BotFather gave you.')
-  process.exit(1)
-}
+// Token from @BotFather, hardcoded so no .env file is needed.
+const token = '8850656713:AAGYuIX3b9CYEe9LxbijDl2jvaemnsRV2ds'
 
 const bot = new Telegraf(token)
 
@@ -28,7 +23,7 @@ console.log('Bot is starting... press Ctrl+C to stop.')
 bot.launch().catch((err) => {
   if (err?.response?.error_code === 401) {
     console.error('Telegram rejected the token (401 Unauthorized).')
-    console.error('Check that BOT_TOKEN in .env matches what @BotFather gave you.')
+    console.error('Check that the token in bot.js matches what @BotFather gave you.')
   } else {
     console.error('Bot failed to start:', err)
   }
